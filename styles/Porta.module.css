@@ -1,0 +1,64 @@
+.area {
+    width: var(--area-porta-largura);
+    height: var(--area-porta-altura);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+}
+
+.estrutura {
+    display: flex;
+    flex-grow: 1;
+    border-top: 5px solid brown;
+    border-left: 5px solid brown;
+    border-right: 5px solid brown;
+    width: 90%;
+    background-color: #0005;
+    cursor: pointer;
+    flex-direction: column-reverse;
+}
+
+.porta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: chocolate;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.numero {
+    font-size: 3rem;
+}
+
+.macaneta {
+    position: absolute;
+    align-self: flex-end;
+    top: calc(0.45 * var(--area-porta-altura));
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.chao {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.selecionada {
+    border-top: 5px solid gold;
+    border-left: 5px solid gold;
+    border-right: 5px solid gold;
+}
+
+.selecionada .numero{
+    color: gold;
+}
+
+.selecionada .macaneta{
+    background-color: gold;
+}
